@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Paper: Robust Uncertainty Quantification in Oral Lesion Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .title, .section-title {
+            color: #007bff;
+            text-align: center;
+        }
+        .authors, .section-title {
+            margin-top: 5px;
+            text-align: center;
+            color: #666;
+        }
+        .status, .disclaimer {
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+            color: #333;
+        }
+        .disclaimer {
+            color: #dc3545; /* Red color to highlight the disclaimer */
+            font-weight: bold;
+        }
+        .abstract {
+            margin-top: 30px;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+        }
+        .abstract-content {
+            text-align: justify;
+        }
+        .abstract-title, .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Robust Uncertainty Quantification in Oral Lesion Classification using CNNs</h1>
+        <p class="authors">Camille Besombes, Adeetya Patel, S.reenath Madathil</p>
+        <p class="status">Under review at International Journal of Computer Vision (IJCV), 2024</p>
+        <p class="disclaimer">Warning: The full paper is not available at this moment as it is currently under review. Please check back later for updates.</p>
+        <div class="abstract">
+            <div class="abstract-title">Abstract</div>
+            <div class="abstract-content">
+                <p><strong>Background:</strong> Oral cancer is ranked among the 10 most common cancers in the world and the majority of them are detected at late stage disease resulting in poor survival. Accurate and timely diagnosis of oral lesions, some of which can be cancerous, is crucial to reduce the burden of this disease. With the recent success of deep learning (DL) methods in image recognition, clinical decision support systems (CDSS) using these methods have been proposed as a solution for reducing the diagnostic delay. The primary goal of CDSS is to reduce the decision uncertainty faced by a clinician. However, almost all of the previous DL models developed for oral lesion diagnosis have ignored quantifying their uncertainty, which is crucial in out-of-distribution situations.</p>
+                <p><strong>Objective:</strong> In this work, we develop a novel evidential deep learning model that accurately predicts oral lesion types from intra-oral images and produces uncertainty in its predictions. We further compare this approach to a Bayesian deep learning model in terms of uncertainty levels.</p>
+                <p><strong>Methods:</strong> The dataset used in this study includes 12,865 images of 66 different oral lesions across 6000 unique patients, collected by oral pathologists. We utilized the Efficientnet-b5 model as the backbone for two approaches: Evidencial Deep Learning (EDL) and MC-DropConnect (MCDC), comparing their performance in accuracy, discrimination, calibration, and uncertainty quantification.</p>
+                <p><strong>Results:</strong> The EDL model demonstrated an average F1-score of 71.4% compared to 69.7% for MCDC, showing better accuracy for most oral lesion types. Both models had similar discriminatory power, but the EDL model produced better-calibrated predictions and quantified uncertainty more effectively than MCDC.</p>
+                <p><strong>Conclusion:</strong> This study presents two approaches to developing uncertainty-aware DL models for oral lesion diagnosis. The EDL model not only performs comparably to the MCDC approach but also offers the added benefit of producing better-calibrated predictions and efficient uncertainty estimation without multiple forward passes.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html
